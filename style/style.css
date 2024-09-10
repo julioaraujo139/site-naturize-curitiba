@@ -180,8 +180,9 @@
 .elementor-container-section-faqs h1 {
     text-align: left;
     margin-bottom: 20px;
-    color:rgb(113, 113, 113);
+    color:rgb(27, 66, 43);
     font-size: 32px;
+    font-weight: 8  00;
 }
 
 .elementor-container-section-questions {
@@ -190,7 +191,7 @@
 }
 
 .elementor-container-section-questions summary {
-    background-color:rgb(129, 172, 55);
+    background-color:rgb(113, 113, 113);
     padding: 2%;
     color: #fff;
     font-size: 20px;
@@ -212,7 +213,7 @@
 }
 
 .elementor-contanier-sectcion-4 h1 {
-    text-align: center; /* Centraliza o texto */
+    text-align: center;
     margin-bottom: 20px;
 }
 
