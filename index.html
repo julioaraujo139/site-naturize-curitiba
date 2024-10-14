@@ -3,28 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icone" href="images/icone_favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Naturize Ambiental Curitiba</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16653409971">
-    </script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-16653409971');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MNP5PJZ6');</script>
+    <!-- End Google Tag Manager -->
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MNP5PJZ6"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div>
         <a class="whatsapp-link" href="https://wa.me/5541987932672?text=Olá%20Naturize!%20Eu%20desejo%20saber%20mais%20sobre%20o%20serviço%20de%20controle%20de%20pragas." target="_blank">
             <i class="fa fa-whatsapp"></i>
         </a>
     </div>
-    <header class="elementor-contanier-background"> 
+    <header>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="hero">INICIO</a></li>
+                <li><a href="about">SOBRE A EMPRESA</a></li>
+                <li><a href="services">SERVIÇOS</a></li>
+                <li><a href="contact">CONTATOS</a></li>
+            </ul>
+            <a href="" id="color" class="action-btn">AGENDAR VISITA</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>    
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="hero">INICIO</a></li>
+            <li><a href="about">SOBRE A EMPRESA</a></li>
+            <li><a href="services">SERVIÇOS</a></li>
+            <li><a href="contact">CONTATOS</a></li>
+            <li><a href="" id="color" class="action-btn">AGENDAR VISITA</a></li>
+        </div>
+    </header>
+    <main>
+        <section class="elementor-contanier-background"> 
         <div class="elementor-contanier">
             <div class="elementor-contanier-logo">
                 <img src="images/logo_naturize_topo.png" alt="Logo Naturize">
@@ -34,8 +58,7 @@
                 <h3>Seja qual for o inseto indesejado. Produtos utilizados para esta aplicação são inodoras, e seguem um rigoroso padrão de qualidade, oferecendo aos nossos clientes garantia e segurança.</h3>
             </div>
         </div>
-    </header>
-    <main>
+        </section>
         <sectcion>
             <div class="elementor-contanier-sectcion-1">
                 <div class="elementor-contanier-sectcion-1-text">
@@ -185,5 +208,19 @@
         </div>
         <p class="elementor-contanier-footer-copyright">&#169; Copyright 2024. Naturize Ambiental. Todos os direitos reservados.</p>   
     </footer>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
 </body>
 </html>
