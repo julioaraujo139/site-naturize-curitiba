@@ -103,7 +103,7 @@ header {
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background:rgb(113, 113, 113, .7);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -131,26 +131,6 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 495px) {
-    .navbar .links,
-    .navbar .action-btn {
-        display: none;
-    }
-
-    .navbar .toggle-btn {
-        display: block;
-    }
-
-    .dropdown-menu {
-        display: block;
-    }
-
-    .dropdown-menu {
-        left: 2rem;
-        width: unset;
-    }
 }
 
 .elementor-contanier-background {
@@ -450,6 +430,26 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 495px) {
+    .navbar .links,
+    .navbar .action-btn {
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
 @media (max-width: 1440px) {
     .elementor-contanier {
         padding: 40px 120px 60px;
