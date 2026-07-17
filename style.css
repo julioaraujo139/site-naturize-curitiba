@@ -178,7 +178,7 @@ header {
     justify-content: space-around;
     padding-top: 120px;
     padding-right: 120px;
-    padding-bottom: 0;
+    padding-bottom: 80px;
     padding-left: 120px;
 }
 
@@ -458,7 +458,7 @@ footer {
         width: 75%;
     }
     .elementor-contanier-sectcion-1 {
-        padding: 60px 120px 0;
+        padding: 60px 120px 60px;
     }
     .elementor-contanier-sectcion-2 {
         padding: 60px 120px;
